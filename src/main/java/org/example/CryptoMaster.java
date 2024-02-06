@@ -10,7 +10,7 @@ public class CryptoMaster {
 
     public CryptoMaster(CryptoConfig config) {
         this.config = config;
-        this.executorService = Executors.newFixedThreadPool(config.getProcessorCount());
+        this.executorService = Executors.newFixedThreadPool(this.config.getProcessorCount());
     }
 
     public void execute() throws InterruptedException {
